@@ -11,14 +11,15 @@ const Modal = ({ openPopup, setOpenPopup, onAfterConfirm }) => {
       <div className="modal-dialog" role="document">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title">
-              Confirmation
-            </h5>
+            <h5 className="modal-title">Confirmation</h5>
             <button
               type="button"
               className="close"
               data-dismiss="modal"
               aria-label="Close"
+              onClick={() => {
+                setOpenPopup(false);
+              }}
             >
               <span aria-hidden="true">&times;</span>
             </button>
@@ -31,16 +32,20 @@ const Modal = ({ openPopup, setOpenPopup, onAfterConfirm }) => {
               type="button"
               className="btn btn-secondary"
               data-dismiss="modal"
-              onClick={()=>{
+              onClick={() => {
                 setOpenPopup(false);
                 onAfterConfirm();
               }}
             >
               Yes
             </button>
-            <button type="button" className="btn btn-primary" onClick={()=>{
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={() => {
                 setOpenPopup(false);
-              }}>
+              }}
+            >
               No
             </button>
           </div>
