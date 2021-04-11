@@ -1,0 +1,9 @@
+.container {
+    max-width: 600px;
+}
+.margin-right {
+    margin-right: 16px;
+}
+.action-icons {
+    cursor: pointer;
+}
