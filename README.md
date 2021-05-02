@@ -1,3 +1,5 @@
+![friends](https://user-images.githubusercontent.com/37725567/116813902-dea6e380-ab73-11eb-927e-b8fed01fc3c8.png)
+
 demo site - https://friends-list01.netlify.app/
 
 Friends-list is the react project with the following functionalities
@@ -17,3 +19,4 @@ Run project
 ```terminal
 $ npm run start
 ```
+
